@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'BungeeOutline';
+    src: url('Fontes/BungeeOutline-Regular.ttf') format('truetype');
+    /*
+    Tipos de format:
+       -opentype (utf)
+       -truetype (ttf)
+       -embedded-opentype
+       -truetype-aat (Apple Advanced Typography)
+       -svg
+
+    */
+}
+@font-face {
+    font-family: 'ConcertOne';
+    src: url('Fontes/ConcertOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Allerta';
+    src: url('Fontes/Allerta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GOT';
+    src: url('Fontes/Game\ of\ Thrones.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TVD';
+    src: url('Fontes/Sunblood.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TVD';
+    src: url('Fontes/Sunblood.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --cor01:#C2E0F2;
+    --cor02:#8FB8D0;
+    --cor03:#6CB8EF;
+    --cor04:#4C83AB;
+    --cor05:#39617E;
+
+    --fontepadrao:'Allerta', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+    background-color: var(--cor03);
+   
+}
+
+p{
+    font-family: var(--fontepadrao); 
+    padding-bottom: 40px;
+}
+h1{
+
+    font-family: 'ConcertOne';
+    color: #08089E;
+    
+}
+header {
+ background-color: var(--cor05);
+
+}
+header ul {
+    list-style: none;
+    
+    
+}
+
+header li{
+    display: inline;
+    padding: 5px ;   
+    font-family: 'ConcertOne';
+    
+
+    
+}
+header a{
+    color: white;
+    text-decoration: none;
+   
+}
+
+header a:hover{
+    background-color: var(--cor04);
+    color: rgb(36, 51, 76) ;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration:underline ;
+    transition-duration: 1s;
+   
+    
+    
+}
+
+header .textonafrente{
+   
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 5px
+}
+.logo{
+    width: 100px;
+}
+figure, figure img {
+    display: flex;
+
+}
+
+.tituloprin{
+    font-family: 'BungeeOutline';
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 9px;
+}
+main{
+
+    margin: 0px 20px 0px 20px ;
+    background-color: white;
+    padding: 40px 0px 0px 20px;
+    margin: auto;
+    min-width: 290px;
+    max-width: 800px;
+    margin: auto;
+}
+main p, main h1{
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+.main img {
+    width: 200px;
+    margin: auto;
+}
+
+.quadro figure img{
+    background-color: var(--cor05);
+    border-radius: 10px;
+    padding: 10px;   
+   
+}
+
+.quadro p{
+    background-color: var(--cor01);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.tituloGOT{
+    font-family: 'GOT';
+    background-image: linear-gradient(to bottom, rgb(230, 98, 31), rgb(144, 144, 33));
+  
+  background-clip: text;/*apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+  -webkit-text-fill-color: transparent;
+
+
+}
