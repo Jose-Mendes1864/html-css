@@ -91,11 +91,13 @@ header li{
 
     
 }
+
 header a{
     color: white;
     text-decoration: none;
    
 }
+
 
 header a:hover{
     background-color: var(--cor04);
@@ -109,6 +111,11 @@ header a:hover{
     
 }
 
+header ul:hover > :not(:hover){
+    opacity: .7;
+    
+
+}
 header .textonafrente{
    
     display: flex;
@@ -118,6 +125,7 @@ header .textonafrente{
 }
 .logo{
     width: 100px;
+    border-style: none;
 }
 figure, figure img {
     display: flex;
@@ -153,14 +161,16 @@ main p, main h1{
 .main img {
     width: 200px;
     margin: auto;
+ 
 }
 
 .quadro figure img{
     background-color: var(--cor05);
     border-radius: 10px;
-    padding: 10px;   
+    padding: 10px;  
    
 }
+
 
 .quadro p{
     background-color: var(--cor01);
@@ -177,4 +187,39 @@ main p, main h1{
   -webkit-text-fill-color: transparent;
 
 
+}
+main figure{
+    margin-top: 2em;
+    margin-bottom: 3em;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    padding: 20px;
+    margin: auto 80px;
+}
+.photos3 .f1{
+  margin-right: 5px;
+  width: 180px;
+}
+.photos3 .f2{
+    width: 180px;
+    margin-left:  10px;
+    margin-right: 10px;
+  }
+  
+  .photos2{
+    justify-content: space-between;
+  }
+  .photos2 .f1{
+    margin-right: 15px;
+  }
+  .photos2 .f2{
+    margin-left: 15px;
+  }
+
+#quadrofim p{
+    background-color:var(--cor02);
+    width: 20em;
+}
+#quadrofim{
+    margin-top: 3em;    
 }
